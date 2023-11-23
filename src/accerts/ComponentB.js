@@ -1,6 +1,5 @@
 import Componentc from './Componentc';
 import { Firstcontext } from './ComponentA';
-import { getValue } from '@testing-library/user-event/dist/utils';
 
 
 const ComponentB = () => {
@@ -9,7 +8,8 @@ const ComponentB = () => {
     <div style={{backgroundColor:"blue",padding:"10px"}}>
         
         <Firstcontext.Consumer>
-            {value=><p>his city is : {value.city}</p>}
+          
+            {value=><p>his city is : {value.username}</p>}
 
         </Firstcontext.Consumer>
         this is component B
